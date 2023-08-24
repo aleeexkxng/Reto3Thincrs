@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eliminar Tarjeta</title>
+</head>
+
+<body>
+    <h1>Eliminar Tarjeta</h1>
+    <p>¿Estás seguro de que deseas eliminar la tarjeta con ID {{ tarjeta.id }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Eliminar Tarjeta</button>
+    </form>
+    <br>
+</body>
+
+</html>
